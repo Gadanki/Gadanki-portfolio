@@ -1,0 +1,160 @@
+body{
+    font-family: Inter;
+    margin: 0;
+    padding: 0;
+    color: #EAEAEA;
+    background: url(Images/bg1.jpg) no-repeat center center/cover fixed;
+}
+/* Nav bar */
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav a{
+    text-decoration: none;
+    padding: 20px;
+    border: 1px solid #EAEAEA;
+    color: #EAEAEA;
+    font-weight: 500;
+    background-color: rgb(0, 0, 0, 0.4);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+nav a:active,
+nav a:hover{
+    color: #EAEAEA;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #ffd369;
+  margin-bottom: 15px;
+}
+
+#objective p {
+  text-align: justify;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+#objective strong {
+    color: #ff9f1c;
+}
+
+/*Body part*/
+.home,
+.container{
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    background: rgb(0, 0, 0, 0.7);
+}
+
+h1{
+    font-family: Parkinsans, sans-serif;
+    color: #EAEAEA;
+}
+
+h4{
+    color: #ffd369;
+}
+
+.quote{
+    font-style: italic;
+    font-family: Macando;
+    font-size: large;
+    font-weight: 800;
+    text-align: center;
+    color: black;
+    background-color: rgb(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#education ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+#education li {
+    margin-bottom: 20px;
+}
+
+.container a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+/*Contact section was changed with night bg*/
+.contact-section {
+    width: 100%;
+    min-height: 100vh; 
+    background: url(Images/bg2.png) no-repeat center center/cover; /* Example gradient */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact-section h2{
+  color: rgb(22, 14, 110);
+}
+.contact-section h4{
+  color: rgb(22, 14, 110);
+}
+
+.contact-section p, 
+.contact-section a {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: black;
+  text-decoration: none;
+}
+
+.contact-details {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  padding: 30px;
+  line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  nav a {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+}

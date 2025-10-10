@@ -1,0 +1,377 @@
+body{
+    font-family: parkinsans, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Brand/Home section */
+.navbar .logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo i {
+  margin-right: 8px;
+  color: #FFD700; /* golden accent */
+}
+
+/* Navbar links */
+.navbar nav a {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 18px;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.7);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  margin: 0 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Hover effect - golden glow underline */
+.navbar nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 4px;
+  width: 0%;
+  height: 2px;
+  background: #FFD700;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+.navbar nav a:hover::after {
+  width: 70%;
+}
+
+.navbar nav a:hover {
+  color: #000;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Active link */
+.navbar nav a.active {
+  color: #000;
+  font-weight: 600;
+  border-bottom: 2px solid #FFD700;
+}
+
+.home-link {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+.home-link:hover {
+    color: blue;
+}
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: rgba(0,0,0,0.6);
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* 🎥 Cinematic Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+  animation: zoomIn 8s ease-in-out forwards;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255,215,0,0.2), rgba(0,0,0,0.9) 70%);
+}
+
+.hero-text {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(255,215,0,0.6);
+  animation: fadeInUp 2s ease-in-out forwards;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero-text span,
+.hero-text em {
+  background: linear-gradient(90deg, #ffd700, #f39c12);
+  color: #ffd700; /* fallback for unsupported browsers */
+  background-clip: text;
+  -webkit-background-clip: text; /* required for Chrome/Safari */
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* ✨ Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes zoomIn {
+  0% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Main Hackathon Section */
+.hackathon {
+  background: linear-gradient(to bottom, #000000, #111111);
+  color: #fff;
+  padding: 100px 10% 70px;
+}
+
+/* Flex layout for image + text */
+.hackathon-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* Left Image */
+.hackathon-image {
+  flex: 1;
+  text-align: center;
+}
+.hackathon-image img {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.hackathon-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 45px rgba(255, 215, 0, 0.5);
+}
+
+/* Right Text */
+.hackathon-text {
+  flex: 1;
+  min-width: 320px;
+}
+.hackathon-text h2 {
+  font-size: 2.2rem;
+  color: #ffd700;
+  margin-bottom: 25px;
+}
+.hackathon-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #f3f3f3;
+  margin-bottom: 18px;
+}
+.hackathon-text strong {
+  color: #fff4b2;
+}
+
+/* LinkedIn Button */
+.linkedin-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  width: 100%;
+}
+.linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #0077b5, #00a0dc);
+  color: white;
+  padding: 12px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.linkedin-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #00a0dc, #0077b5);
+}
+.linkedin-btn i {
+  margin-right: 8px;
+}
+
+/* Certificate Section */
+.certificate-section {
+  text-align: center;
+  margin-top: 80px;
+}
+.certificate-section img {
+  width: 55%;
+  max-width: 950px;
+  border-radius: 14px;
+  box-shadow: 0 0 30px rgba(255,215,0,0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.certificate-section img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 45px rgba(255,215,0,0.5);
+}
+
+/* Debate Journey Section */
+.debate {
+  background: radial-gradient(circle at center, #000000, #151a61);
+  color: #fff;
+  padding: 100px 10%;
+}
+
+.debate-content {
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+.debate-content h2 {
+  text-align: center;
+  color: #ffd700;
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  text-shadow: 0 0 20px rgba(255,215,0,0.4);
+}
+
+.debate-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.debate-content strong {
+  color: #fff3a5;
+}
+
+.highlight {
+  color: #ffd700;
+  font-weight: 700;
+}
+
+/* Image gallery inside story */
+.debate-photos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+
+.debate-photos img {
+  width: 45%;
+  max-width: 420px;
+  height: 300px; /* keeps all images uniform in height */
+  object-fit: cover; /* crops instead of stretching */
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-color: #111; /* ensures smooth edge for smaller images */
+}
+
+.debate-photos img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* below navbar */
+        right: 20px;
+        background: rgba(0,0,0,0.6);
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hackathon {
+      padding: 80px 6% 50px;
+    }
+    .hackathon-text h2 {
+      font-size: 1.8rem;
+    }
+    .certificate-section img {
+      width: 95%;
+    }
+    .hackathon-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    .hackathon-image img {
+      width: 95%;
+    }
+    .hackathon-text h2 {
+      font-size: 1.8rem;
+    }
+    .debate-content h2 {
+      font-size: 2rem;
+    }
+    .debate-photos img {
+      width: 90%;
+      max-width: auto;
+    }
+}

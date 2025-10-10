@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="certifications.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="home-link">
+            <i class="fa-solid fa-house-user"></i>&nbsp; HOME
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav id="nav-links">
+             <a href="projects.html">Projects</a>
+            <a href="internships.html">Internships</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="page-header">
+        <h1>Badges I've Earned</h1>
+    </section>
+
+    <section class="certifications">
+        <div class="cert-grid">
+
+        <!-- IoT Certification -->
+        <div class="cert-card">
+            <img src="images/iot-cert.png" alt="IoT Certificate">
+            <div class="cert-content">
+            <h2>Introduction to Internet of Things</h2>
+            <p class="cert-sub">Jul - Oct 2024 | IIT Kharagpur</p>
+            <p class="highlight">🏆 Scored 91% - Topped in NPTEL IoT Course</p>
+            <div class="skills">
+                <span>IoT Architecture</span>
+                <span>Sensors And Actuators</span>
+                <span>Data Communication</span>
+                <span>Smart Applications</span>
+            </div>
+            </div>
+        </div>
+
+        <!-- Java Programming -->
+        <div class="cert-card">
+            <img src="images/java-cert.png" alt="Java Certificate">
+            <div class="cert-content">
+            <h2>Java Programming</h2>
+            <p class="cert-sub">Apr 2024 | Hong Kong University of Science and Technology</p>
+            <div class="skills">
+                <span>Core Java</span>
+                <span>OOPS Concepts</span>
+                <span>Collections</span>
+                <span>Problem Solving</span>
+            </div>
+            </div>
+        </div>
+
+        <!-- Cloud Computing -->
+        <div class="cert-card">
+            <img src="images/azure-cert.png" alt="Azure Certificate">
+            <div class="cert-content">
+                <h2>Cloud Computing with Microsoft Azure</h2>
+                <p class="cert-sub">Jul - Aug 2022 | Verzeo Internship</p>
+                <p class="highlight">Virtual Machines, Bot Integration & Storage Management</p>
+                <div class="skills">
+                    <span>Azure Virtual Machines</span>
+                    <span>Bot Integrations (Telegram)</span>
+                    <span>Storage Machines</span>
+                    <span>SQL Databases</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="cert-card">
+            <img src="images/js-cert.png" alt="JavaScript Certificate">
+            <div class="cert-content">
+            <h2>JavaScript</h2>
+            <p class="cert-sub">Guvi Certification</p>
+            <div class="skills">
+                <span>DOM</span>
+                <span>Creating simple applications using JS</span>
+                <span>Functions and Conditional Statements</span>
+                <span>Debugging</span>
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img">
+    </div>
+
+    <script>
+    // Get elements
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".close");
+
+    // Open lightbox on click
+    document.querySelectorAll(".cert-card img").forEach(img => {
+        img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+        });
+    });
+
+    // Close lightbox
+    closeBtn.addEventListener("click", () => {
+        lightbox.style.display = "none";
+    });
+
+    // Close when clicking outside image
+    lightbox.addEventListener("click", (e) => {
+        if (e.target !== lightboxImg) {
+        lightbox.style.display = "none";
+        }
+    });
+    </script>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-links").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

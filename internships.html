@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="internships.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="home-link">
+            <i class="fa-solid fa-house-user"></i>&nbsp; HOME
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav id="nav-links">
+            <a href="projects.html">Projects</a>
+            <a href="certifications.html">Certifications</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Adventures in Tech..</h2>
+    </section>
+
+    <!--Internship - 1-->
+    <section class="internship">
+        <div class="internship-left">
+            <img src="Images/testaing-logo.png" alt="TestAIng Logo" class="company-logo">
+            <h3>Machine Learning Intern, TestAIng.com</h3>
+            <p><strong>Apr 2025 - June 2025</strong></p>
+            <ul>
+                <li>Created user-focused documentation for machine learning pipelines to support development and testing teams.</li>
+                <li>Streamlined company operations by documenting internal workflows and coordinating with senior mentors for organizational planning.</li>
+                <li>Contributed to the development of text classification pipelines aligned with real-world education technology use cases.</li>
+            </ul>
+        </div>
+
+        <div class="internship-right">
+            <img src="Images/intern-rendezvous.png" alt="Intern Rendezvous Presentation" class="event-image">
+            <p class="caption">Intern Rendezvous: Presented on Object Detection</p>
+        </div>
+
+        <div class="internship-extra">
+            <div class="extra-grid">
+                <!-- Certificate -->
+                <div class="extra-item">
+                    <h4>Intern Rendezvous Participation Certificate</h4>
+                    <a href="Images/intern-certificate.png" target="_blank">
+                        <img src="Images/intern-certificate.png" alt="Intern Rendezvous Certificate" class="certificate-image">
+                    </a>
+                </div>
+                <div class="extra-item">
+                    <h4>My Presentation on Object Detection</h4>
+                    <div class="ppt-container">
+                        <!-- Replace with your actual Google Slides / OneDrive embed link -->
+                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSGKzxbR8DhXN029t4UAWAN91tEgylpKp6IdWsebEg_mZYc-mGGUDCXdqYzd_EzfA/pubembed?start=true&loop=false&delayms=3000" 
+                            frameborder="0" 
+                            width="100%" 
+                            height="480" 
+                            allowfullscreen="true" 
+                            mozallowfullscreen="true" 
+                            webkitallowfullscreen="true">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Stack Web Development Internship Section -->
+    <section class="internship internship-fullstack">
+        <div class="internship-left fullstack-color">
+            <img src="Images/mainflow-logo.png" alt="Main Flow Services Logo" class="company-logo">
+            <h3 style="color: #1c1547;">Full Stack Web Development Intern, Main Flow Services and Technologies</h3>
+            <p style="color: #1c1547;"><strong>Oct 2024 - Dec 2024</strong></p>
+            <ul style="color: #1c1547;">
+                <li>Collaborated with cross-functional teams to complete engaging and impactful tasks, working across frontend, backend, and database layers to develop and optimize full-stack web applications.</li>
+                <li>Developed and implemented form validations, designed and maintained multiple webpages, created dynamic tables, stored and managed data in databases, and built a basic React application.</li>
+            </ul>
+        </div>
+
+        <div class="internship-right">
+            <img src="Images/fullstack-certificate.png" alt="Full Stack Internship certificat showcase" class="event-image">
+            <p class="caption" style="color: #1c1547;">Worked on frontend, backend, and databases during this internship</p>
+        </div>
+    </section>
+
+    <!-- AI & ML Internship Section -->
+    <section class="internship internship-aiml">
+        <div class="internship-left">
+            <img src="Images/edunet-logo.png" alt="Edunet Logo" class="company-logo">
+            <h3>Artificial Intelligence and Machine Learning Intern, Edunet</h3>
+            <p><strong>May 2024 - June 2024</strong></p>
+            <ul>
+                <li>Developed a sophisticated Sentiment Analysis model to classify restaurant reviews as positive or negative, leveraging foundational machine learning techniques and optimizing model accuracy for real-world applicability.</li>
+                <li><b>Data Collection & Cleaning</b>: Removed noise, handled missing values, 
+                normalized text.</li>
+                <li><b>Data Preprocessing</b>: Tokenization, stemming/lemmatization and stop-word removal.</li>
+                <li><b>Feature Extraction</b>: Implemented Bag-of-words, TF-IDF, and embeddings for numerical representation</li>
+                <li><b>Model Development</b>: Trained and compared models using Naive Bayes Classifier</li>
+                <li><b>Model Evaluation</b>: Assessed with accuracy, precision, recall, and F1-score; applied cross-validation</li>
+                <li><b>Fine-Tuning</b>: Performed hyperparameter optimization for improved performance.</li>
+                <li>Participated in <b>IBM SkillsBuild Modules</b> to strengthen personal traits, leadership skills 
+                and teamwork, enhancing overall professional growth alongside technical expertise.</li>
+            </ul>
+        </div>
+
+        <div class="internship-right">
+            <h4>Certificate of Completion</h4>
+            <a href="Images/edunet-certificate.png" target="_blank">
+                <img src="Images/edunet-certificate.png" alt="Edunet Internship Certificate" class="certificate-a4">
+            </a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-links").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

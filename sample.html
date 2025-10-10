@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Hackathon Section */
+.hackathon {
+  background: linear-gradient(to bottom, #000000, #111111);
+  color: white;
+  padding: 80px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hackathon-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hackathon-images {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.hackathon-images img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255,215,0,0.2);
+  transition: transform 0.4s ease;
+}
+.hackathon-images img:hover {
+  transform: scale(1.05);
+}
+
+.hackathon-text {
+  flex: 1;
+  min-width: 320px;
+}
+
+.hackathon-text h2 {
+  font-size: 2rem;
+  color: #ffd700;
+  margin-bottom: 20px;
+}
+
+.hackathon-text p {
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #f2f2f2;
+  margin-bottom: 15px;
+}
+
+.tech-stack h3 {
+  color: #f4c542;
+  margin-bottom: 10px;
+}
+
+.tech-stack ul {
+  list-style: none;
+  padding: 0;
+}
+.tech-stack li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(90deg, #0077b5, #00a0dc);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.linkedin-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #00a0dc, #0077b5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hackathon-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hackathon-images img {
+    width: 90%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <!-- Idea Hackathon Section -->
+<section class="hackathon">
+  <div class="hackathon-content">
+    <div class="hackathon-images">
+      <img src="images/hackathon-team.jpg" alt="Team Photo">
+      <img src="images/hackathon-cert.jpg" alt="Hackathon Certificate">
+    </div>
+
+    <div class="hackathon-text">
+      <h2>🏆 Idea Hackathon - SPMVV WBIF</h2>
+      <p>
+        As part of the <strong>SPMVV - Women Biotech Incubation Facility</strong>, my team and I developed an IoT-based project titled 
+        <strong>“Anti-Smuggle Sentinel”</strong>, focused on combating sandalwood smuggling.
+      </p>
+      <p>
+        To safeguard forest resources, our system uses intelligent sensor integration and real-time monitoring to detect illegal activity, 
+        particularly focusing on vibration-based alerts from tree tampering attempts.
+      </p>
+
+      <div class="tech-stack">
+        <h3>Technologies Used</h3>
+        <ul>
+          <li>⚙️ Piezoelectric Accelerometers – for detecting vibration and intrusion activity</li>
+          <li>🌐 ESP32 – for dual Wi-Fi and Bluetooth connectivity with low energy usage</li>
+          <li>📡 LoRa – for long-range, low-power communication ideal for forest environments</li>
+        </ul>
+      </div>
+
+      <a href="YOUR_LINKEDIN_POST_URL" target="_blank" class="linkedin-btn">
+        <i class="fa-brands fa-linkedin"></i> View on LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
