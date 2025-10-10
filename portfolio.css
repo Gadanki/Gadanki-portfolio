@@ -137,24 +137,82 @@ h4{
   line-height: 1.8;
 }
 
-/* Responsive Design */
+/* Enhanced Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .home, .container {
+    width: 95%;
+    padding: 15px;
+  }
+  .quote {
+    font-size: 1rem;
+    padding: 15px;
+  }
+}
+
 @media (max-width: 768px) {
-  h1 {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  nav a {
+    width: 90%;
+    padding: 10px 0;
+    font-size: 0.95rem;
+  }
+
+  .home h1 {
     font-size: 1.8rem;
   }
-  nav a {
-    font-size: 0.9rem;
-    padding: 8px;
+
+  .home p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  #objective p, #education ul {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .contact-details {
+    padding: 20px;
+  }
+
+  .contact-section p, 
+  .contact-section a {
+    font-size: 1rem;
+    word-wrap: break-word;
   }
 }
 
 @media (max-width: 480px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
+  h1 {
+    font-size: 1.4rem;
   }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .quote {
+    font-size: 0.9rem;
+    padding: 10px;
+    margin: 10px;
+  }
+
   nav a {
+    font-size: 0.9rem;
     width: 100%;
     text-align: center;
+  }
+
+  .contact-section {
+    padding: 20px 10px;
+  }
+
+  .contact-details {
+    padding: 15px;
   }
 }
