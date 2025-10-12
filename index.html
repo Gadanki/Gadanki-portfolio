@@ -1,77 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
-    <link rel="stylesheet" href="portfolio.css"></link>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="portfolio.css" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Parkinsans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-    <div class="home" id="title">
-        <h2>Hello! I'm</h2>
-        <h1>GADANKI YAMUNASREE</h1>
-        <p>An MCA Graduate with Vibrant skills & A fresher, but no less prepared!</p>
-    </div>
-    <div>
-        <nav>
-            <!-- <a href="#objective">Objective</a> -->
-            <a href="#education">Education</a> 
-            <a href="projects.html">Projects</a>
-            <a href="internships.html">Internships</a>
-            <a href="certifications.html">Certifications</a>
-            <a href="achievements.html">Achievements</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </div>
-    <div class="container" id="objective">
-        <h2>Personal Introduction</h2>
-        <p> 
-            I'm not just another Computer Science graduate — I'm someone who believes 
-            that every line of code has the power to change lives. 
-            My journey in technology started with curiosity, grew with challenges, and
-            today it fuels my passion for solving problems creatively.
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Portfolio</div>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="#education">Education</a>
+        <a href="projects.html">Projects</a>
+        <a href="internships.html">Internships</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HOME -->
+  <section class="home" id="title">
+    <h2>Hello! I'm</h2>
+    <h1>GADANKI YAMUNASREE</h1>
+    <p>An MCA Graduate with Vibrant skills & A fresher, but no less prepared!</p>
+  </section>
+
+  <!-- PERSONAL INTRO -->
+  <section class="container" id="objective">
+    <h2>Personal Introduction</h2>
+    <p>
+      I'm not just another Computer Science graduate — I'm someone who believes
+      that every line of code has the power to change lives.
+      My journey in technology started with curiosity, grew with challenges, and
+      today it fuels my passion for solving problems creatively.
+    </p>
+    <p>
+      Over the years, I've transformed from an eager learner into a
+      <strong style="color: #ff9f1c;">project builder, problem solver, and recognized speaker.</strong>
+      From normal coding challenges to idea hackathons, I've discovered that
+      my real strength lies in connecting ideas with impact.
+    </p>
+  </section>
+
+  <div class="quote">
+    <p>"With every new beginning comes a golden opportunity to reinvent yourself."</p>
+  </div>
+
+  <!-- EDUCATION -->
+  <section class="container" id="education">
+    <h2>The Path Traveled</h2>
+    <ul>
+      <li>
+        <h4>Masters in Computer Applications</h4>
+        <p>
+          I have been recently graduated from Sri Padmavati Mahila Visvavidyalayam, Tirupati.
+          A place that gave me wonderful opportunities to grow and connect with amazing people.
+          Being one of the brightest students of the MCA batch (2023-2025), I was honored with many titles!
         </p>
         <p>
-            Over the years, I've transformed from an eager learner into a <strong>
-            project builder, problem solver, and recognized speaker.</strong> 
-            From normal coding challenges to idea hackathons, I've discovered that 
-            my real strength lies in connecting ideas with impact.
+          It is the period when people recognized me as –
+          <span style="color:#ff9f1c">True Leader, Game Changer and Finisher</span>
         </p>
-    </div>
-</div>
-    <div class="quote">
-        <p>"With every new beginning comes a golden opportunity to reinvent yourself.."</p>
-    </div>
+      </li>
+      <li>
+        <h4>Bachelors in Computer Applications</h4>
+        <p>
+          During the pandemic years, when the world slowed down, I found myself diving deeper into my passion on technology.
+          Then I chose my tech path and pursued BCA from SDHR Degree and PG College affiliated to Sri Venkateswara University.
+          The place where I've reconstructed from introvert to ambivert and gained communication skills.
+        </p>
+        <p>
+          My titles in the Campus –
+          <span style="color:#ff9f1c">Engaging Speaker, Positive Thinker and Best Team Player</span>
+        </p>
+      </li>
+    </ul>
+  </section>
 
-    <div class="container" id="education">
-        <h2>The Path Traveled</h2>
-        <ul>
-            <li><h4>Masters in Computer Applications</h4></li>
-            <p>I have been recently graduated from Sri Padmavati Mahila Visvavidyalayam, Tirupati.  
-                A place that gave me wonderful opportunities to grow and connect with amazing people.
-                Being one of the brightest students of the MCA batch(2023-2025), I was honored with many titles!
-                <p>It is the period when people recognized me as - <span style="color:#ff9f1c">True Leader, Game Changer and Finisher</span></p>
-            </p>
-            <li><h4>Bachelors in Computer Applications</h4></li>
-            <p>During the pandemic years, when the world slowed down, I found myself diving deeper into my passion on technology. That was the year 2020!
-                Then I choosen my tech path and pursued BCA from SDHR Degree and PG College affiliated to Sri Venkateswara Unviersity.
-                The place where I've reconstructed from introvert to ambivert and gained communication skills.
-                <p>My titles in the Campus - <span style="color:#ff9f1c">Engaging Speaker, Positive Thinker and Best Team Player</span></p>
-            </p>
-        </ul>
-    </div>
+  <div class="quote">
+    <p>Nana korobi ya oki — "Fall seven times and stand up eight"</p>
+  </div>
 
-    <div class="quote">
-        <p>Nana korobi ya oki - "Fall seven times and stand up eight"</p>
-    </div>
-
-    <div class="contact-section" id="contact">
-        <div class="contact-details">
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="contact-details">
             <h2>I love to hear from you!</h2>
             <p>
                 Please do leave your thoughts on to my mail - <a href="mailto:gadanikiyamunasree@gmail.com" style="color:rgb(22,14,110)"><i class="fa-solid fa-envelope"></i>&nbsp;gadankiyamunasree@gmail.com</a>
@@ -82,7 +110,16 @@
             <p>GitHub (Most of my project codebases are available here.) -> <a href="https://github.com/Gadanki" style="color:rgb(22,14,110)" target="_blank"><i class="fa-brands fa-github"></i>&nbsp;GitHub</a></p>
             <p>LeetCode (I'm just getting started here, but learning something new every day!) -> <a href="https://leetcode.com/u/gadanki/" style="color:rgb(22,14,110)" target="_blank"><i class="fa-solid fa-circle-user"></i>&nbsp;My leetcode profile!</a></p>
         </div>
-    </div>
-    <!--<script src="portfolio.js"></script>-->
+  </section>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
